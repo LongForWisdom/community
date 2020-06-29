@@ -54,12 +54,11 @@ Should support and facilitate communications between the other mandated actors i
 
 ## Monthly
 ### Collateral Community Greenlight Polls
-Create the community greenlight polls on the fourth week of each governance cycle.
+Create the community greenlight polls on the third week of each governance cycle.
 
 ## Generally
 ### Emergency Process
 Should work with the community to operate an emergency voting process to defend the system in the event of an emergency.
-Possible Action: Create Emergency Process MIPs.
 ### Onboarding
 Should aim to onboard and maintain at least three Governance Facilitators at all times while prioritising candidates from unrepresented geographic regions.
 ### Engagement

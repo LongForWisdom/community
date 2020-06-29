@@ -3,7 +3,6 @@
 ## Permissions
 **Official Forum:** Global Moderator  
 **Official Chat:** Global Moderator in public channels  
-**Official Chat:** Channel Creation  
 **Community Github:** PR Review over polling section  
 **Community Github:** PR Review over governance facilitators section  
 **Voting Dashboard:** Poll Creation  
@@ -14,7 +13,7 @@
 **Meeting:** Mandated Actors Weekly  
 **Official Chat:** Mandated Actor Channel  
 **Forum:** Governance Facilitators Group + Title  
-**Rocket Chat:** Governance Facilitators Group + Title  
+**Rocket Chat:** Governance Facilitators Flair
 
 ## Knowledge Transfer
 **Process:** Poll Deloyment  
@@ -26,6 +25,6 @@
 **Requirements:** MIP3  
 **Requirements:** MIP9  
 **Document:** Governance Facilitators: Practical Requirements  
-**Document:** Governance Facilitators: Onboarding List  
+**Document:** Governance Facilitators: Onboarding Checklist  
 **Document:** Governance Facilitators: Strategy  
 **Document:** Governance Facilitators: Meeting History  
