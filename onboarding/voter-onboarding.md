@@ -14,7 +14,7 @@ Voting takes place frequently and requires a governance community who is activel
 
 For more information, visit:
 
-- [Governance FAQ](../faqs/governance.md)
+- [Governance FAQ](./faqs/governance.md)
 - [Governance: Awesome-MakerDAO](https://github.com/makerdao/awesome-makerdao/blob/master/README.md#governance)
 - [What is DAI Governance? - DAI Beginner Series](https://youtu.be/QHmNf_YROQU)
 
@@ -40,7 +40,7 @@ A collection of sources and materials useful for MKR voters:
 ### Essential:
 
 - [Governance Forum](https://forum.makerdao.com/c/governance)
-- [Governance and Risk Meeting: Audio](https://soundcloud.com/makerdao/sets/governance-calls) | [Video](https://www.youtube.com/playlist?list=PLLzkWCj8ywWNq5-90-Id6VPSsrk4OWVan) | [Transcripts](https://github.com/makerdao/community/blob/master/governance/governance-and-risk-meetings/transcripts) | [Summaries](https://github.com/makerdao/community/blob/master/governance/governance-and-risk-meetings/transcripts)
+- [Governance and Risk Meeting: Audio](https://soundcloud.com/makerdao/sets/governance-calls) | [Video](https://www.youtube.com/playlist?list=PLLzkWCj8ywWNq5-90-Id6VPSsrk4OWVan) | [Transcripts](https://github.com/makerdao/community/blob/master/governance/governance-and-risk-meetings/transcripts) | [Summaries](https://community-development.makerdao.com/governance/governance-and-risk-meetings/summaries)
 - [Ratified Foundation Proposal](https://medium.com/makerdao/foundation-proposal-v2-f10d8ee5fe8c)
 - [Voting Tutorial Video](https://youtu.be/wP7DedWcEmg?list=PLLzkWCj8ywWP6yCPPm1IRKysNsrzg3LQ6)
 
@@ -48,7 +48,7 @@ A collection of sources and materials useful for MKR voters:
 
 - [Awesome-MakerDAO: Governance](https://github.com/makerdao/awesome-makerdao#governance)
 - [Awesome-MakerDAO: Voting](https://github.com/makerdao/awesome-makerdao#voting)
-- [Governance FAQ](../faqs/governance.md)
+- [Governance FAQ](./faqs/governance.md)
 
 ## Governance Polling vs. Executive Voting
 
@@ -107,7 +107,7 @@ For illustration, this guide uses Trezor as the cold wallet and MetaMask as the 
 
 Please have the Trezor wallet ready and the MetaMask browser extension installed and running. Log in and make sure the appropriate MetaMask account is selected.
 
-Navigate to the [Governance Portal](https://vote.makerdao.com/). Before setting up the contract, connect Trezor and MetaMask. 
+Navigate to the [Governance Portal](https://vote.makerdao.com/). Before setting up the contract, connect Trezor and MetaMask.
 
 **Connect MetaMask:** Find the [“Accounts”](https://vote.makerdao.com/) drop-down menu on the right side of the top banner. If MetaMask is active, the current account will show as an available wallet. Make sure this is the correct account and select it to use as the hot wallet.
 
@@ -203,10 +203,10 @@ To begin voting, skip ahead to the [Voting Process](#the-voting-process) section
 
 See the links below for in-depth, step-by-step walkthroughs for other wallet types:
 
-*   [Linked Wallet Setup: Trezor](https://web.archive.org/web/20190112110249/https://medium.com/makerdao/how-to-setup-the-voting-contract-using-a-trezor-hardware-wallet-af4969aa157f)
-*   [Linked Wallet Setup: Ledger Nano S](https://web.archive.org/web/20190112110248/https://medium.com/makerdao/how-to-setup-the-voting-contract-using-a-ledger-hardware-wallet-1f00d49ce43a)
-*   [Linked Wallet Setup: Two MetaMask Accounts](https://web.archive.org/web/20190112110247/https://medium.com/makerdao/how-to-setup-the-voting-contract-using-two-metamask-accounts-4e83e4fec602)
-*   [Linked Wallet Setup: Paper Wallets Using SETH](https://web.archive.org/web/20180913234419/https://medium.com/makerdao/guide-vote-proxy-setup-with-seth-f62397a10c59)
+- [Linked Wallet Setup: Trezor](https://web.archive.org/web/20190112110249/https://medium.com/makerdao/how-to-setup-the-voting-contract-using-a-trezor-hardware-wallet-af4969aa157f)
+- [Linked Wallet Setup: Ledger Nano S](https://web.archive.org/web/20190112110248/https://medium.com/makerdao/how-to-setup-the-voting-contract-using-a-ledger-hardware-wallet-1f00d49ce43a)
+- [Linked Wallet Setup: Two MetaMask Accounts](https://web.archive.org/web/20190112110247/https://medium.com/makerdao/how-to-setup-the-voting-contract-using-two-metamask-accounts-4e83e4fec602)
+- [Linked Wallet Setup: Paper Wallets Using SETH](https://web.archive.org/web/20180913234419/https://medium.com/makerdao/guide-vote-proxy-setup-with-seth-f62397a10c59)
 
 ### Managing the Linked Wallet Voting Contract
 
