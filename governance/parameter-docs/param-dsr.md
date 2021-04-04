@@ -1,4 +1,5 @@
-# $HumanReadableName
+# DAI Savings Rate
+
 
 ```
 Alias: NA
@@ -9,44 +10,36 @@ Technical Docs:https://docs.makerdao.com/smart-contract-modules/rates-module/pot
 ```
 
 ## Description
-* What is this parameter?
-The Dai Savings Rate (DSR) is a variable rate of accrual earned by locking Dai in the DSR smart contract. Dai holders can earn savings automatically and natively while retaining control of their Dai. The DSR smart contract has no withdrawal limits, deposit limits, or liquidity constraints.
+The Dai Savings Rate (DSR) is the interest accrued on Dai locked in DSR smart contract. Interest is accrued automatically every second on locked-up Dai till you exit from the DSR smart contracts. For example, if you lock in 100 DAI into the DSR smart contract at the rate of 2% DSR for 1 year then at the end of the year you'll get 102 DAI 
 
-Interest will be distributed to users every second at a growth rate of x% per second, but in the UI rates are displayed annually. For example, if the DSR was 2%, assuming the user put in 100 Dai, at the end of the first year they would have 102.00, and at the end of the second year they would have 104.04.
-
-You need to note that the rates can be adjusted by Maker governance randomly above 0% 
-
-* How does it fit in with the protocol and surrounding contracts?
-The Dai Savings Rate (DSR) is also a monetary policy tool used by Maker governance to influence demand for Dai. Raising the DSR incentivizes users to hold more Dai, leading to higher demand for Dai, whereas lowering the DSR has the opposite effect of reducing demand for Dai. This is reflected in the spot market price of Dai; if Dai is trading below a dollar, then the DSR can be raised to increase demand for Dai which would bring up the price of Dai. Conversely, if Dai is trading above a dollar, then the DSR can be lowered to reduce the demand for holding Dai which may help bring down the price of Dai
+In addition to this param will be very helpful for maintaining the stability of DAI by changing DSR, Let's say if DAI is below 1 USD then governance can vote on increasing DSR rate by which demand of DAI increases and DAI will be close to 1 USD and vice-versa if DSR is above 1 USD
 
 ## Purpose
-* Why does this parameter exist?
 
-Major purpose of this parameter is to incentive users for locking DAI in the DSR smart contract 
+The primary purpose of this parameter is to incentive users for locking DAI in the DSR smart contract which will help protocol increasing demand of DAI and control stability of DAI 
 
 ## Trade-offs
-* What dangers does this parameter represent?
-It’s possible for MKR governors to commission a rewrite of the code to be able to support negative rates. Whether this would make sense is another question. Negative rates on the DSR might not be effective, since users would simply withdraw their Dai.
 
-* What advantages does this parameter represent?
-DSR has no liquidity constraints, no minimum lockup time and no withdrawal limit so users can enter into and out of DSR freely they need to pay ethereum transaction fee   
+If governance chooses to set the dsr to an extremely high rate, this could cause the system's fees to be far too high. Furthermore, if governance allows the dsr to (significantly) exceed the system fees, it would cause debt to accrue and increase the Flop auctions.
+
+However stability of DAI can be easily achieved by changing DSR as per requirement by the governance, For example, if Dai is trading below a dollar, then the DSR can be raised to increase demand for Dai which would bring up the price of Dai. Conversely, if Dai is trading above a dollar, then the DSR can be lowered to reduce the demand for holding Dai which may help bring down the price of Dai.  
 
 ## Changes
-* How are changes to this parameter made?
-The dsr rate initially can be set through the Chief. Governance will be able to change the DSR based on the rules that the DS-Chief employs (which would include a Pause for actions).
-One serious risk is if governance chooses to set the dsr to an extremely high rate, this could cause the system's fees to be far too high. Furthermore, if governance allows the dsr to (significantly) exceed the system fees, it would cause debt to accrue and increase the Flop auctions.
+
+Adjusting DSR is a manual process that requires an executive vote. Governance will be able to change the DSR based on the rules that the DS-Chief employs
 
 **Why increase this parameter?**
-Raising the DSR incentivizes users to hold more Dai, leading to higher demand for Dai
+The primary reason for increasing DSR is to create more demand of DAI, This is positive because this parameter helps us to maintain the stability of DAI, For example, if DAI is trading below a dollar then increasing DSR will create demand for DAI which eventually bring up the price of DAI
 
 **Why decrease this parameter?**
-Lowering the DSR will lead users to stop lending DAI which reduces demand for Dai
+The primary reason for lowering DSR is to lower the demand of DAI, which is not good because this will lead users to stop lending DAI into DSR but on the other side is positive because this parameter helps us to maintain the stability of DAI, For example, if DAI is trading above a dollar then decreasing DSR will reduce the demand of DAI which eventually bring down the price of DAI
 
 ## Considerations
-* Is there anything little known about this parameter
- Stability fees structurally higher due to the existence of the DSR, Also there is no counterparty borrowing risk involved because DSR is determined mostly by the governance
+
+Stability fees structurally higher due to the existence of the DSR with is no counterparty borrowing risk involved because DSR is determined mostly by the governance
+
+DSR is set by the governance which will be mostly positive always with the lower limit of 0% in unforeseen situations in the current codebase 
 
 * How does this interact with other parts of the protocol?
 
-* Are there any Emergency Shutdown considerations to take into account?
-If in case such situation arises then Maker ecosystem will freeze DAI minting and DSR, Once cooldown period is completed and Maker ecosystem redeploys the system you can stop your DSR and withdraw your funds 
+If in case such a situation arises then the Maker ecosystem will freeze DAI minting and DSR, Once the cooldown period is completed and the Maker ecosystem redeploys the system you can stop your DSR and withdraw your funds 
